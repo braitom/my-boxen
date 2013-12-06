@@ -55,3 +55,17 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+github "chrome",      "1.1.2"
+github "iterm2",      "1.0.6"
+github "dropbox",     "1.2.0"
+github "vagrant",     "3.0.0"
+github "alfred",      "1.1.7"
+github "virtualbox",  "1.0.9"
+github "evernote",    "2.0.4"
+github "cyberduck",   "1.0.1"
+github "mou",         "1.1.3"
+github "sublime_text_2",  "1.1.2"
+github "sizeup",      "1.0.0"
+github "osx",         "2.2.0"
+github "firefox",     "1.1.5"
+github "python",      "1.0.0", :repo => "braitom/puppet-python"
