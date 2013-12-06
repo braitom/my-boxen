@@ -19,7 +19,7 @@ class people::braitom {
   include osx::dock::autohide
   include osx::finder::show_external_hard_drives_on_desktop
   include osx::finder::show_removable_media_on_desktop
-  include osx::show_hidden_files
+  include osx::finder::show_hidden_files
   class { 'osx::dock::position':
     position => "left"
   }
@@ -30,25 +30,24 @@ class people::braitom {
       'wget',
       'tree',
       'jq',
-      'readline'
     ]:
   }
   
   # package install
-  package {
-    'GoogleJapaneseInput':
-      source => "http://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg",
-      provider => pkgdmg;
+  #package {
+    #'GoogleJapaneseInput':
+    #  source => "http://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg",
+    #  provider => pkgdmg;
     #'kobito':
     #  source => "http://kobito.qiita.com/download/kobito_v1.8.4.zip",
     #  provider => compressed_app;
     #'XtraFinder':
     #  source => "http://www.trankyunam.com/xtrafinder/downloads/XtraFinder.dmg",
     #  provider => pkgdmg"
-  }
+  #}
 
-  $home    = "/User/${::boxen_user}"
+  #$home    = "/User/${::boxen_user}"
 
-  include python::2_7_3
-  class { 'python::global': version => '2.7.3' }
+  #include python::2_7_3
+  #class { 'python::global': version => '2.7.3' }
 }
