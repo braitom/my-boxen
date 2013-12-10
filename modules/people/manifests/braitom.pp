@@ -34,17 +34,17 @@ class people::braitom {
   }
   
   # package install
-  #package {
-    #'GoogleJapaneseInput':
-    #  source => "http://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg",
-    #  provider => pkgdmg;
-    #'kobito':
-    #  source => "http://kobito.qiita.com/download/kobito_v1.8.4.zip",
-    #  provider => compressed_app;
-    #'XtraFinder':
-    #  source => "http://www.trankyunam.com/xtrafinder/downloads/XtraFinder.dmg",
-    #  provider => pkgdmg"
-  #}
+  package {
+    'GoogleJapaneseInput':
+      source => "http://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg",
+      provider => pkgdmg;
+    'kobito':
+      source => "http://kobito.qiita.com/download/kobito_v1.8.4.zip",
+      provider => compressed_app;
+    'XtraFinder':
+      source => "http://www.trankyunam.com/xtrafinder/downloads/XtraFinder.dmg",
+      provider => pkgdmg;
+  }
 
   #$home    = "/User/${::boxen_user}"
 
