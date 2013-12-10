@@ -42,7 +42,7 @@ class people::braitom {
       source => "http://kobito.qiita.com/download/kobito_v1.8.4.zip",
       provider => compressed_app;
     'XtraFinder':
-      source => "http://www.trankyunam.com/xtrafinder/downloads/XtraFinder.dmg",
+      source => "http://www.trankynam.com/xtrafinder/downloads/XtraFinder.dmg",
       provider => pkgdmg;
   }
 
